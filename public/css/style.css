@@ -11,6 +11,10 @@
     widows: 1; 
 }
 
+.card-columns .card .card-img, .overlay {
+    border-radius: 20px;
+}
+
 @media only screen and (max-width: 1024px) {
     .card-columns {
         -webkit-column-count: 3;

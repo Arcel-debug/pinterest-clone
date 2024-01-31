@@ -16,17 +16,17 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <a class="navbar-brand font-weight-bolder mr-3" href="index.html"><img src="{{ asset('/images/logo.png') }}"></a>
+        <a class="navbar-brand font-weight-bolder mr-3" href="{{ url('/') }}"><img src="{{ asset('/images/logo.png') }}"></a>
         <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarsDefault">
             <ul class="navbar-nav ml-auto align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link active" href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="post.html">Create</a>
+                    <a class="nav-link" href="{{ url('/post') }}">Create</a>
                 </li>
             </ul>
             <ul class="navbar-nav mr-auto align-items-center">
@@ -45,21 +45,6 @@
         @yield('content')
         
     </main>
-
-    <footer class="footer pt-5 pb-5 text-center">
-        <div class="container">
-            <div class="socials-media">
-                <ul class="list-unstyled">
-                    <li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-facebook"></i></a></li>
-                    <li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-twitter"></i></a></li>
-                    <li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-instagram"></i></a></li>
-                    <li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-google-plus"></i></a></li>
-                    <li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-behance"></i></a></li>
-                    <li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
     
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/theme.js') }}"></script>
